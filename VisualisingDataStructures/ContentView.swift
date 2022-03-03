@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var stack = Stack()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            HStack {
+                Button("Push", action: {
+                    stack.push(item: "Help")
+                })
+                Spacer()
+                Button("Pop", action: {
+                    stack.pop()
+                })
+            }
+        }.padding()
+        List {
+            ForEach(stack.items, id: \.self) {item in
+                Text("\(item)")
+            }
+        }
     }
 }
 

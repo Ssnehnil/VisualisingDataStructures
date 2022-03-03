@@ -10,27 +10,47 @@ import XCTest
 
 class VisualisingDataStructuresTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testStackPush() {
+        let stack = Stack()
+        XCTAssertEqual(stack.push(item: "Apple"), ["Apple"])
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testStackPop() {
+        let stack = Stack()
+        let _ = stack.push(item: "Apple")
+        XCTAssertEqual(stack.pop(), "Apple")
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testStackView() {
+        let stack = Stack()
+        let _ = stack.push(item: "Apple")
+        let _ = stack.push(item: "Banana")
+        let _ = stack.push(item: "Carrot")
+        XCTAssertEqual(stack.view(), ["Apple","Banana","Carrot"])
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testStackPeek() {
+        let stack = Stack()
+        let _ = stack.push(item: "Apple")
+        XCTAssertEqual(stack.peek(), "Apple")
+    }
+    
+    func testEnqueue() {
+        let queue = Queue()
+        XCTAssertEqual(queue.enqueue(item: "Apple"), ["Apple"])
+    }
+    
+    func testDequeue() {
+        let queue = Queue()
+        let _ = queue.enqueue(item: "Apple")
+        XCTAssertEqual(queue.dequeue(), "Apple")
+    }
+    
+    func testQueueShow() {
+        let queue = Queue()
+        let _ = queue.enqueue(item: "Apple")
+        let _ = queue.enqueue(item: "Banana")
+        XCTAssertEqual(queue.show(), ["Apple","Banana"])
     }
 
 }
