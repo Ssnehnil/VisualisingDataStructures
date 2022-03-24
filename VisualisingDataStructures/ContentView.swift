@@ -14,18 +14,18 @@ struct ContentView: View {
         VStack {
             HStack {
                 Button("Push", action: {
-                    stack.push(item: "Help")
-                })
+                    _ = stack.push(item: "Help")
+                }).disabled(stack.isFull())
                 Spacer()
                 Button("Pop", action: {
-                    stack.pop()
-                })
-            }
-        }.padding()
-        List {
-            ForEach(stack.items, id: \.self) {item in
-                Text("\(item)")
-            }
+                    _ = stack.pop()
+                }).disabled(stack.isEmpty())
+            }.padding()
+            List {
+                ForEach(stack.stack.reversed(), id: \.self) { item in
+                    Text("\(item)")
+                }
+            }.padding()
         }
     }
 }

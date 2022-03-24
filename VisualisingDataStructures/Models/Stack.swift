@@ -8,7 +8,7 @@
 import Foundation
 
 class Stack: NSObject, ObservableObject {
-    private var stack: [String] = []
+    @Published var stack: [String] = []
     
     func peek() -> String? {
         return stack.first
@@ -28,6 +28,22 @@ class Stack: NSObject, ObservableObject {
             return "Empty"
         } else {
             return "\(self.stack.removeLast())"
+        }
+    }
+    
+    func isEmpty() -> Bool {
+        if stack.count == 0 {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func isFull() -> Bool {
+        if stack.count >= 10 {
+            return true
+        } else {
+            return false
         }
     }
 }
