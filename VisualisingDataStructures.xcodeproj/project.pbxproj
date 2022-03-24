@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D2B930C27D0E3B10028F717 /* VisualisingDataStructuresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B930B27D0E3B10028F717 /* VisualisingDataStructuresApp.swift */; };
-		1D2B930E27D0E3B10028F717 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B930D27D0E3B10028F717 /* ContentView.swift */; };
+		1D2B930E27D0E3B10028F717 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B930D27D0E3B10028F717 /* StackView.swift */; };
 		1D2B931027D0E3B30028F717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D2B930F27D0E3B30028F717 /* Assets.xcassets */; };
 		1D2B931327D0E3B30028F717 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D2B931227D0E3B30028F717 /* Preview Assets.xcassets */; };
 		1D2B931D27D0E3B30028F717 /* VisualisingDataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B931C27D0E3B30028F717 /* VisualisingDataStructuresTests.swift */; };
@@ -16,6 +16,9 @@
 		1D2B932927D0E3B30028F717 /* VisualisingDataStructuresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B932827D0E3B30028F717 /* VisualisingDataStructuresUITestsLaunchTests.swift */; };
 		1D2B933727D0E3FE0028F717 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B933627D0E3FE0028F717 /* Stack.swift */; };
 		1D2B933927D0EDFF0028F717 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B933827D0EDFF0028F717 /* Queue.swift */; };
+		1D2E8D4227EC9ED70080E910 /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2E8D4127EC9ED70080E910 /* QueueView.swift */; };
+		1D2E8D4427EC9F6C0080E910 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2E8D4327EC9F6C0080E910 /* ContentView.swift */; };
+		1D2E8D4627ECA0E00080E910 /* LinkedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2E8D4527ECA0E00080E910 /* LinkedListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 /* Begin PBXFileReference section */
 		1D2B930827D0E3B10028F717 /* VisualisingDataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualisingDataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2B930B27D0E3B10028F717 /* VisualisingDataStructuresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresApp.swift; sourceTree = "<group>"; };
-		1D2B930D27D0E3B10028F717 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1D2B930D27D0E3B10028F717 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		1D2B930F27D0E3B30028F717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D2B931227D0E3B30028F717 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D2B931827D0E3B30028F717 /* VisualisingDataStructuresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualisingDataStructuresTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +51,9 @@
 		1D2B932827D0E3B30028F717 /* VisualisingDataStructuresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisingDataStructuresUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1D2B933627D0E3FE0028F717 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		1D2B933827D0EDFF0028F717 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		1D2E8D4127EC9ED70080E910 /* QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
+		1D2E8D4327EC9F6C0080E910 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1D2E8D4527ECA0E00080E910 /* LinkedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				1D2B933527D0E3EC0028F717 /* Models */,
+				1D2E8D4027EC9EA60080E910 /* Views */,
 				1D2B930B27D0E3B10028F717 /* VisualisingDataStructuresApp.swift */,
-				1D2B930D27D0E3B10028F717 /* ContentView.swift */,
 				1D2B930F27D0E3B30028F717 /* Assets.xcassets */,
 				1D2B931127D0E3B30028F717 /* Preview Content */,
 			);
@@ -139,6 +145,17 @@
 				1D2B933827D0EDFF0028F717 /* Queue.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1D2E8D4027EC9EA60080E910 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1D2E8D4327EC9F6C0080E910 /* ContentView.swift */,
+				1D2B930D27D0E3B10028F717 /* StackView.swift */,
+				1D2E8D4127EC9ED70080E910 /* QueueView.swift */,
+				1D2E8D4527ECA0E00080E910 /* LinkedListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D2B930E27D0E3B10028F717 /* ContentView.swift in Sources */,
+				1D2B930E27D0E3B10028F717 /* StackView.swift in Sources */,
 				1D2B933727D0E3FE0028F717 /* Stack.swift in Sources */,
+				1D2E8D4427EC9F6C0080E910 /* ContentView.swift in Sources */,
 				1D2B930C27D0E3B10028F717 /* VisualisingDataStructuresApp.swift in Sources */,
+				1D2E8D4227EC9ED70080E910 /* QueueView.swift in Sources */,
 				1D2B933927D0EDFF0028F717 /* Queue.swift in Sources */,
+				1D2E8D4627ECA0E00080E910 /* LinkedListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

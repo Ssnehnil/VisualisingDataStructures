@@ -7,15 +7,17 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct StackView: View {
     @ObservedObject private var stack = Stack()
     
     var body: some View {
         VStack {
             HStack {
                 Button("Push", action: {
-                    _ = stack.push(item: "Help")
+                    _ = stack.push(item: "\(1+stack.stack.count)")
                 }).disabled(stack.isFull())
+                Spacer()
+                Text("Stack").font(.largeTitle)
                 Spacer()
                 Button("Pop", action: {
                     _ = stack.pop()
@@ -30,8 +32,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct StackView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        StackView()
     }
 }

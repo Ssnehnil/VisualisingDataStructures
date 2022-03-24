@@ -7,8 +7,8 @@
 
 import Foundation
 
-class Queue {
-    var items: [String] = []
+class Queue: NSObject, ObservableObject {
+    @Published var items: [String] = []
     
     func enqueue(item: String) -> [String] {
         items.append(item)
@@ -25,5 +25,21 @@ class Queue {
     
     func show() -> [String] {
         return items
+    }
+    
+    func isEmpty() -> Bool {
+        if items.count == 0 {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func isFull() -> Bool {
+        if items.count >= 10 {
+            return true
+        } else {
+            return false
+        }
     }
 }
